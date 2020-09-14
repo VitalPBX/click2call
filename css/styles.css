@@ -1,8 +1,0 @@
-.dropdown-toggle::after {
-    display: none;
-}
-.profilePic{
-    padding: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-}
