@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Click2Call App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top">
+        <a class="navbar-brand">
+            <img src="images/logo.png" height="60" alt="click2call logo">
+        </a>
+        <form class="form-inline d-none d-xs-none d-md-block">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-right" style="line-height: 0;" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/joseph.jpg" width="50" height="50" class="profilePic" style="padding: 0; margin: 0 10px"><i class="fas fa-sort-down"></i> Joseph Montes<br>2000
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">
+                        <a href="#" class="dropdown-item"><i class="fal fa-user"></i> Account</a>
+                        <a href="#" class="dropdown-item"><i class="far fa-cog"></i> Settings</a>
+                        <a href="#" class="dropdown-item"><i class="fad fa-sign-out"></i> Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="text-center" style="padding-top: 50px;">Click2Call Contacts</h1>
+    <div class="container" style="padding-top: 20px;">
+        <div class="card flex-row flex-wrap">
+            <div class="border-0 mx-auto">
+                <img src="images/john.jpg" class="profilePic" width="150" height="150" alt="Profile Picture">
+            </div>
+            <div class="card-block px-2" style="width: 80%; margin: auto;">
+                <h2 class="card-title">John Smith</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="card-text">
+                            Company: Luigi's Auto Inc. <br>
+                            Email: jsmith@luigiautoinc.net <br>
+                            Phone: +1 (555) 484-6868
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="#" class="float-lg-right">
+                            <div class="form-group form-inline">
+                                <input type="hidden" name="extension" value="2000">
+                                <button type="submit" name="click2call" value="15554846868" class="btn btn-success" style="margin: 0 5px;"><i class="fas fa-phone"></i></button>
+                                <button type="submit" name="foobar" class="btn btn-primary" style="margin: 0 5px;"><i class="fas fa-envelope"></i></button>
+                                <button type="submit" name="foobar" class="btn btn-warning" style="margin: 0 5px;"><i class="fas fa-sms"></i></button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100 text-muted">
+                    Added 2019-08-14 13:25
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 20px;">
+        <div class="card flex-row flex-wrap">
+            <div class="border-0 mx-auto">
+                <img src="images/samantha.jpg" class="profilePic" width="150" height="150" alt="Profile Picture">
+            </div>
+            <div class="card-block px-2" style="width: 80%; margin: auto;">
+                <h2 class="card-title">Samantha Carson</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="card-text">
+                            Company: Golden Nugget Ltd. <br>
+                            Email: samcarson@goldennuggetltd.com <br>
+                            Phone: +1 (555) 786-5947
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="#" class="float-lg-right">
+                            <div class="form-group form-inline">
+                                <input type="hidden" name="extension" value="2000">
+                                <button type="submit" name="click2call" value="15557865947" class="btn btn-success" style="margin: 0 5px;"><i class="fas fa-phone"></i></button>
+                                <button name="foobar" class="btn btn-primary" style="margin: 0 5px;"><i class="fas fa-envelope"></i></button>
+                                <button name="foobar" class="btn btn-warning" style="margin: 0 5px;"><i class="fas fa-sms"></i></button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100 text-muted">
+                    Added 2020-03-15 09:25
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 20px;">
+        <div class="card flex-row flex-wrap">
+            <div class="border-0 mx-auto">
+                <img src="images/max.jpg" class="profilePic" width="150" height="150" alt="Profile Picture">
+            </div>
+            <div class="card-block px-2" style="width: 80%; margin: auto;">
+                <h2 class="card-title">Max Anderson</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="card-text">
+                            Company: Ripple Telecom USA <br>
+                            Email: max.anderson@rippletelecomusa.com <br>
+                            Phone: +1 (555) 342-069
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="#" class="float-lg-right">
+                            <div class="form-group form-inline">
+                                <input type="hidden" name="extension" value="2000">
+                                <button type="submit" name="click2call" value="15554846868" class="btn btn-success" style="margin: 0 5px;"><i class="fas fa-phone"></i></button>
+                                <button type="submit" name="foobar" class="btn btn-primary" style="margin: 0 5px;"><i class="fas fa-envelope"></i></button>
+                                <button type="submit" name="foobar" class="btn btn-warning" style="margin: 0 5px;"><i class="fas fa-sms"></i></button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100 text-muted">
+                    Added 2020-04-03 16:42
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav style="margin: 25px;" aria-label="Contact Navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fixed-bottom bg-dark" style="margin: 0; height: 120px;">
+        <p class="text-light text-center" style="margin-top: 25px;;">Click2Call™ is a Registered Trademark for VitalPBX LLC.<br>VitalPBX™ © 2020</p>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
