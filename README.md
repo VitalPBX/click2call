@@ -73,6 +73,7 @@ class Config{
 	];
 }
 ```
+If you are using a site with https certificate, it is necessary to change line 3 of the file
 
 - Go to the project
 ```
