@@ -74,6 +74,19 @@ class Config{
 }
 ```
 
+- Go to the project
+```
+cd /usr/share/click2call/www
+```
+- Edit the configuration file
+```
+nano includes/resClient.php
+```
+
+```php
+public $baseURL = 'https://localhost/api/v2';
+```
+
 ## Notes
 For further information about VitalPBX's API, visit the following link: [API Documentation](https://rebrand.ly/qnwtalw)
 
