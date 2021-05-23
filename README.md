@@ -73,13 +73,13 @@ class Config{
 	];
 }
 ```
-If you are using a site with https certificate, it is necessary to change line 3 of the file
+If you are using a site with https certificate, it is necessary to change line 3 of the file resClient.php
 
 - Go to the project
 ```
 cd /usr/share/click2call/www
 ```
-- Edit the configuration file
+- Edit the resClient.php file
 ```
 nano includes/resClient.php
 ```
