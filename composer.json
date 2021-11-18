@@ -1,0 +1,21 @@
+{
+  "name": "vitalpbx/click2call",
+  "license": "GPL-3.0-only",
+  "require": {
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "authors": [
+    {
+      "name": "Jose Rivera",
+      "email": "miguel@vitalpbx.com"
+    },
+    {
+      "name": "Rodrigo Cuadra"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Click2Call\\": "src/"
+    }
+  }
+}

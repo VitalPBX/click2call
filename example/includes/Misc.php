@@ -1,4 +1,6 @@
 <?php
+namespace Click2Call\Example;
+
 class Misc{
 	public static function phoneFormat($number) {
 		if(strlen($number) == 10) {

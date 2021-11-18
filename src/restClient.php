@@ -1,20 +1,39 @@
 <?php
+
+namespace Click2Call;
+
+use Dotenv\Dotenv;
+
+require_once( __DIR__ . '/../vendor/autoload.php' );
+
 class restClient{
-	public $baseURL = 'http://localhost/api/v2';
-	public $APIKey;
-	public $tenant;
+	protected $baseURL;
+	protected $APIKey;
+	protected $tenant;
 
 	/**
 	 * restClient constructor.
-	 * @param string $APIKey Application key generated on VitalPBX GUI
 	 */
-	public function __construct($APIKey){
-		$this->APIKey = $APIKey;
+	public function __construct(){
+
+        // load environment variables...
+        if( file_exists(__DIR__ . '/../.env') ) {
+            $env_file = '.env';
+        } else {
+            echo 'No environment file is configured for the current application environment (.env)';
+            exit;
+        }
+
+        $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+        $dotenv->load();
+
+		$this->APIKey = $_SERVER['API_KEY'];
+		$this->baseURL = $_SERVER['API_URL'];
 	}
 
 	/**
-	 * Set tenant ID or path to retrieve information of an specific tenant.
-	 * If the APIKey is associated to an specific tenant, this parameter is ignored
+	 * Set tenant ID or path to retrieve information of a specific tenant.
+	 * If the APIKey is associated to a specific tenant, this parameter is ignored
 	 * @param string $tenant
 	 */
 	public function setTenant($tenant){
@@ -87,7 +106,7 @@ class restClient{
 			}
 
 			curl_close($ch);
-		}catch (Exception $e){
+		}catch (\Exception $e){
 			throw new \RuntimeException($e->getMessage());
 		}
 

@@ -1,6 +1,8 @@
 <?php
+
+namespace Click2Call\Example;
+
 class Config{
-	const API_KEY = 'YOUR_API_KEY';
 	const USERNAME = 'John Doe';
 	const EXTENSION = 'YOUR_EXTENSION_NUMBER';
 	const CUSTOMERS = [

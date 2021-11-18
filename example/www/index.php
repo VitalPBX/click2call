@@ -1,8 +1,17 @@
 <?php
-include_once ("includes/Misc.php");
-include_once ("includes/Config.php");
-include_once ("includes/restClient.php");
-include_once ("includes/Click2Call.php");
+
+use Click2Call\Example\Click2Call;
+use Click2Call\Example\Config;
+use Click2Call\Example\Misc;
+
+# load the click2call restClient and its dependencies
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
+# load the example-specific PHP classes
+require_once(__DIR__ . '/../includes/Click2Call.php');
+require_once(__DIR__ . '/../includes/Config.php');
+require_once(__DIR__ . '/../includes/Misc.php');
+
 
 //Execute click2call
 if(isset($_POST['caller']) && isset($_POST['callee'])){
